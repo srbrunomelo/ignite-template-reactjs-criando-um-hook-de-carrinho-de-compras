@@ -260,13 +260,13 @@ describe('useCart Hook', () => {
         {
           amount: 2,
           id: 1,
-          image:
-            'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg',
+          image: 'https://rocketseat-cdn.s3-sa-east-1.amazonaws.com/modulo-redux/tenis1.jpg',
           price: 179.9,
           title: 'Tênis de Caminhada Leve Confortável',
         },
       ])
     );
+    
     expect(mockedSetItemLocalStorage).toHaveBeenCalledWith(
       '@RocketShoes:cart',
       JSON.stringify(result.current.cart)
